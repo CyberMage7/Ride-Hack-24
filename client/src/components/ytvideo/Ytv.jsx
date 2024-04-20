@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './ytv.css'
 import img from "./videoresource.jpeg";
 import { IoSearch } from "react-icons/io5";
-
+import Navbar from "../Homepage/Navbar/Navbar";
 
 const apiKey = 'AIzaSyCc_sJxkrdB7l3-cd2RiWYOLx-UncJcwlk'; 
 
@@ -28,6 +28,7 @@ function YouTubeSearch() {
 
     return (
         <div>
+            <Navbar />
             <h1 className="yt-head flex h1-yt">Video Resources</h1>
             <div className="wrapper-yt flex">
                 <div className="container">

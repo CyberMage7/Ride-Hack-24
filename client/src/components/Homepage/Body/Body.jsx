@@ -7,6 +7,7 @@ import quizimg from "../../../assets/asset 14.svg";
 import videoimg from "../../../assets/asset 15.svg";
 import donateimg from "../../../assets/video-call.png";
 import doubtimg from "../../../assets/asset 16.svg";
+import Ytv from "../../ytvideo/Ytv";
 
 function Body() {
   const [typeEffect] = useTypewriter({
@@ -65,7 +66,7 @@ function Body() {
               <p>
                 Explore key concepts through engaging, informative videos with expert instruction.
               </p>
-              <a href='/video' className="secondary-button">Learn more <i className="fa-solid fa-right-long"></i></a>
+              <a href='/ytv' className="secondary-button">Learn more <i className="fa-solid fa-right-long"></i></a>
             </div>
             <div className="features-card flex">
               <img src={donateimg} alt="s5" id="sc-img" style={{ height: '71px' }} />
