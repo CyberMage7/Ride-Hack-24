@@ -1,0 +1,173 @@
+
+:root {
+    --transition-time: 2.3s;
+}
+
+.body-study {
+    font-family: 'Oswald', sans-serif;
+    background-color: aliceblue;
+}
+
+#st-header-study {
+    background-image: url('../../assets/b19.jpg');
+    height: 300px;
+    margin: 90px 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.heading-study h1 {
+    top: 100px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 800;
+    color: #8ecae6;
+}
+
+.underline1-study {
+    position: relative;
+}
+
+.underline1-study:before {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: 230px;
+    /* left: 10%; */
+    font-weight: 400;
+    width: 100%;
+    border-bottom: 1.5px solid #219ebc;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    margin-bottom: 0;
+}
+
+.card {
+    position: relative;
+    height: 400px;
+    width: 30%;
+    margin: 10px 30px;
+    transition: ease all var(--transition-time);
+    perspective: 1200px;
+}
+
+.card:hover .cover {
+    transform: rotateX(0deg) rotateY(-180deg);
+}
+
+.cover {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: ease all var(--transition-time);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.cover:before {
+    content: '';
+    position: absolute;
+    border: 5px solid rgba(255, 255, 255, .5);
+    box-shadow: 0 0 12px rgba(0, 0, 0, .3);
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    z-index: 2;
+    transition: ease all var(--transition-time);
+    transform-style: preserve-3d;
+    transform: translateZ(0px);
+}
+
+.cover:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 2;
+    transition: ease all 1.3s;
+    background: rgba(0, 0, 0, .4);
+}
+
+.item-a {
+    background-image: url('../../assets/teacher-monochromatic.svg');
+}
+
+.item-b {
+    background-image: url('../../assets/book-lover-monochromatic.svg');
+}
+
+.item-c {
+    background-image: url('../../assets/rocket-boy-two-color.svg');
+}
+
+.item-d {
+    background-image: url('../../assets/science-discovery-two-color.svg');
+}
+
+.item-e {
+    background-image: url('../../assets/graduation-outline.png');
+}
+
+.h1-s {
+    /* font-weight: lighter; */
+    position: absolute;
+    bottom: 45%;
+    left: 40%;
+    color: white;
+    transform-style: preserve-3d;
+    transition: ease all var(--transition-time);
+    z-index: 3;
+    font-size: 3em;
+
+    transform: translateZ(0px);
+}
+
+.h2-s{
+    left:30%;
+}
+
+.card-back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #0b0f08;
+    transform-style: preserve-3d;
+    transition: ease all var(--transition-time);
+    transform: translateZ(-1px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-back a {
+    transform-style: preserve-3d;
+    transition: ease transform var(--transition-time), ease background .5s;
+    transform: translateZ(-1px) rotatey(-180deg);
+    background: transparent;
+    border: 1px solid white;
+    font-weight: 200;
+    font-size: 1.3em;
+    color: white;
+    margin: 5px;
+    padding: 14px 25px;
+    outline: none;
+    text-decoration: none;
+}
+
+.card-back a:hover {
+    background-color: white;
+    color: #0b0f08;
+}
+
