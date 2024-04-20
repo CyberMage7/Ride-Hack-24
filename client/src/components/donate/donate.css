@@ -1,0 +1,126 @@
+.body-donate {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #c0c7e5da;
+    padding-top: 125px;
+    font-size: larger;
+}
+
+.color-h {
+    color: #088178;
+    text-align: center;
+    margin-top: 0;
+}
+
+.container-donate {
+    display: flex;
+    width: 50%;
+    margin-left: 25%;
+    height: 800px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* background-color: red; */
+    overflow: hidden;
+    ::-webkit-scrollbar{
+        width: 0px;
+    }
+}
+
+.h1-donate {
+    text-align: center;
+    font-size: 2, 5em;
+    color: #088178;
+    margin-bottom: 20px;
+}
+
+.label-donate{
+    font-size: 1.25rem;
+    font-weight:100;
+}
+
+.professional {
+    flex: 1;
+    padding: 20px;
+    /* border: 2px solid #f7f0f0; */
+    border-radius: 15px;
+    /* background: #f3efef; */
+    background:#e9e4e4;
+    margin: 20px;
+    transition: transform 0.3s ease;
+    height: 760px;
+    overflow: auto;
+}
+
+
+.section-donate {
+    margin-bottom: 0px;
+}
+
+
+.input-donate,.select-donate,#product-description {
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    margin-top: 5px;
+    background: #ecf0f3;
+    padding: 10px;
+    padding-left: 20px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 50px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+  
+
+
+.button-donate {
+    padding: 1.5em 2.5em;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: linear-gradient(135deg, #3498db, #1abc9c);
+    transition: all 0.3s ease;
+    font-size: 13px;
+    position: relative;
+    overflow: hidden;
+    outline: none;
+    cursor: pointer;
+}
+
+.button-donate:hover {
+    color: #ffffff;
+    background: linear-gradient(135deg, #1abc9c, #16a085);
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(52, 152, 219, 0.4);
+}
+
+.button-donate::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(135deg, #3498db, #1abc9c);
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 0.3s ease;
+}
+
+.button-donate:hover::before {
+    width: 200%;
+}
+
+.footer-col {
+    background-color: white;
+}
+
+.section-m2 {
+    left: 45%;
+    margin: 10px 0;
+}
