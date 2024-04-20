@@ -1,0 +1,13 @@
+.Vertical-timeline
+{
+    background-color: aliceblue;
+}
+
+.a-time{
+    text-decoration: underline;
+    color:black;
+}
+
+.vertical-timeline-element--work,.vertical-timeline-element--education{
+    margin: 100px;
+}
