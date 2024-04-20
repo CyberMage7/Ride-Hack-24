@@ -1,0 +1,128 @@
+.containers-n {
+	background-color: #ced8ff;
+	padding: 0px;
+}
+
+.navbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #dcedff;
+	padding: 10px 7%;
+	z-index: 1000;
+}
+
+.button-nav {
+	display: flex;
+	align-items: center;
+}
+
+.logo {
+	width: 10%;
+	cursor: pointer;
+}
+
+.ul-navbar {
+	flex: 1;
+	list-style: none;
+	text-align: center;
+}
+
+.li-navbar {
+	display: inline-block;
+	margin: 10px 20px;
+	font-size: 20px;
+	padding: 0 12px;
+	transition: all ease-in 0.2s;
+	text-transform: none;
+	color:#088178;
+}
+
+.li-navbar:hover {
+	cursor: pointer;
+	text-decoration: underline;
+	animation: capitalizeText 0.5s ease forwards;
+	/* Use animation */
+}
+
+.dropdown {
+    position: relative;
+    z-index: 345;
+}
+
+.dropdown p {
+    color: rgb(48, 45, 45);
+    padding: 10px 10px;
+    margin: 10px;
+}
+
+.dropdown-content {
+    border-radius: 20px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+	animation: normal 0.3s ease forwards;
+
+}
+
+@keyframes capitalizeText {
+	from {
+		text-transform: none;
+	}
+	to {
+		text-transform: uppercase;
+	}
+}
+
+.button-nav {
+	gap: 40px;
+	margin-right: -80px;
+}
+
+.bn632-hover {
+	width: 160px;
+	font-size: 16px;
+	font-weight: 600;
+	color: #fff;
+	cursor: pointer;
+	margin: 0px;
+	height: 55px;
+	text-align: center;
+	border: none;
+	background-size: 300% 100%;
+	border-radius: 50px;
+	/* moz-transition: all .4s ease-in-out; */
+	-o-transition: all .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+
+.bn632-hover:hover {
+	background-position: 100% 0;
+	/* moz-transition: all .4s ease-in-out; */
+	-o-transition: all .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+
+.bn632-hover:focus {
+	outline: none;
+}
+
+.bn632-hover.bn26 {
+	background-image: linear-gradient(to right,
+			#25aae1,
+			#4481eb,
+			#04befe,
+			#3f86ed);
+	box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
