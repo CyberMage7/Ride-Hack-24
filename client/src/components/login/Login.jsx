@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./login.css";
 import { Link, useNavigate } from "react-router-dom";
-// import axios from "axios";
+import axios from "axios";
 import { FaEnvelope, FaLock } from 'react-icons/fa';
 
 function Login() {
@@ -10,25 +10,25 @@ function Login() {
   const navigate = useNavigate();
 
 
-//   async function handleSubmit(e) {
-//     e.preventDefault();
+  async function handleSubmit(e) {
+    e.preventDefault();
 
-//     try {
-//       const response = await axios.post("http://localhost:5000/login", {
-//         email,
-//         password,
-//       });
+    try {
+      const response = await axios.post("http://localhost:5000/login", {
+        email,
+        password,
+      });
 
-//       if (response.data.success) {
-//         navigate("/");
-//       }
-//       else {
-//         navigate("/signup");
-//       }
-//     } catch (error) {
-//       console.log(error);
-//     }
-//   }
+      if (response.data.success) {
+        navigate("/");
+      }
+      else {
+        navigate("/signup");
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
   return (
     <>
@@ -39,8 +39,7 @@ function Login() {
             <span>Login</span>
           </div>
 
-          {/* <form onSubmit={handleSubmit}> */}
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="input-box">
               <div className="input-icon">
                 <FaEnvelope />
@@ -52,7 +51,7 @@ function Login() {
                 className="input-field"
                 autoComplete="off"
                 required
-                // onChange={(e) => setEmail(e.target.value)}
+                onChange={(e) => setEmail(e.target.value)}
               />
               <label htmlFor="user" className="label-login">
                 E-mail
@@ -69,7 +68,7 @@ function Login() {
                 className="input-field"
                 autoComplete="off"
                 required
-                // onChange={(e) => setPassword(e.target.value)}
+                onChange={(e) => setPassword(e.target.value)}
               />
               <label htmlFor="pass" className="label-login">
                 Password

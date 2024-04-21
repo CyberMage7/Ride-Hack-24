@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./signup.css";
 import { Link ,useNavigate} from "react-router-dom";
-// import axios from "axios";
+import axios from "axios";
 import { FaUser, FaEnvelope, FaLock } from 'react-icons/fa';
 
 function Signup() {
@@ -11,27 +11,27 @@ function Signup() {
   const [lname, setLname] = useState("");
   const navigate=useNavigate();
 
-//   async function handleSubmit(e) {
-//     e.preventDefault();
+  async function handleSubmit(e) {
+    e.preventDefault();
 
-//     try {
-//       const response = await axios.post("http://localhost:5000/signup",{
-//         fname,
-//         lname,
-//         email,
-//         password,
-//       });
+    try {
+      const response = await axios.post("http://localhost:5000/signup",{
+        fname,
+        lname,
+        email,
+        password,
+      });
 
-//       if (response.data.success) {
-//         navigate("/login");
-//       }
-//       else {
-//         navigate("/signup");
-//       }
-//     } catch (error) {
-//       console.log(error);
-//     }
-//   }
+      if (response.data.success) {
+        navigate("/login");
+      }
+      else {
+        navigate("/signup");
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
   return (
     <>
@@ -117,7 +117,7 @@ function Signup() {
               <button
                 className="input-submit"
                 type="submit"
-                // onClick={handleSubmit}
+                onClick={handleSubmit}
               >
                 SignUp
               </button>
