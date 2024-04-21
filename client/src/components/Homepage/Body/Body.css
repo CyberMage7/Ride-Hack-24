@@ -152,6 +152,7 @@
     color: #183b56 !important;
     padding: 12px 24px;
     transition: 0.2s ease-out;
+    margin-top:10px;
 }
 
 .secondary-button:hover {
