@@ -8,6 +8,8 @@ import Study from "./components/studymaterial/study";
 import Donate from "./components/donate/Donate";
 import Scholarship from './components/scholarship/Scholarship';
 import About from './components/about/About';
+import Lobby from "./components/Lobby/Lobby";
+import RoomPage from "./components/Room/Room";
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <Route path="/donate" element={<Donate />}></Route>
         <Route path="/scholarship" element={<Scholarship />}></Route>
         <Route path="/about" element={<About />}></Route>
+        <Route path="/Lobby" element={<Lobby />} />
+        <Route path="/room/:roomId" element={<RoomPage />} />
 
       </Routes>
     </BrowserRouter>
