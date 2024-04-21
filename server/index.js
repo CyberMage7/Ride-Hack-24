@@ -10,7 +10,7 @@ import cors from "cors";
 const db = new pg.Client({
     user: "postgres",
     host: "localhost",
-    database: "Mercer",
+    database: "Ride-Hack-24",
     password: "vishwas",
     port: 5432,
 });
