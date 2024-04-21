@@ -7,6 +7,7 @@ import Homepage from './components/Homepage/Homepage';
 import Study from "./components/studymaterial/study";
 import Donate from "./components/donate/Donate";
 import Scholarship from './components/scholarship/Scholarship';
+import About from './components/about/About';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/study" element={<Study />}></Route>
         <Route path="/donate" element={<Donate />}></Route>
         <Route path="/scholarship" element={<Scholarship />}></Route>
+        <Route path="/about" element={<About />}></Route>
 
       </Routes>
     </BrowserRouter>
