@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from "../Homepage/Navbar/Navbar";
 import './donate.css';
+import Footer from "../footer/Footer";
 
 function DonateBookForm() {
     const [formData, setFormData] = useState({
@@ -89,6 +90,7 @@ function DonateBookForm() {
                 <button type="submit" className="button-donate section-m2" name="submit">Submit</button>
             </form>
         </div>
+        <Footer />
         </>
     );
 }

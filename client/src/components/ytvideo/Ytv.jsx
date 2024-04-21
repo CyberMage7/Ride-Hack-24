@@ -3,6 +3,7 @@ import './ytv.css'
 import img from "./videoresource.jpeg";
 import { IoSearch } from "react-icons/io5";
 import Navbar from "../Homepage/Navbar/Navbar";
+import Footer from "../footer/Footer";
 
 const apiKey = 'AIzaSyCc_sJxkrdB7l3-cd2RiWYOLx-UncJcwlk'; 
 
@@ -67,6 +68,7 @@ function YouTubeSearch() {
                     </div>
                 ))}
             </div>
+            <Footer />
         </div>
     );
 }

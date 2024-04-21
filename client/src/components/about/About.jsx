@@ -9,6 +9,7 @@ import Sumitimg from "../../assets/devloper4.jpg";
 import Loovimg from "../../assets/devloper5.jpeg"
 import Rashiimg from "../../assets/devloper6.jpeg"
 import { FaGithub,FaLinkedin } from "react-icons/fa";
+import Footer from "../footer/Footer";
 
 
 const About = () => {
@@ -110,6 +111,7 @@ const About = () => {
                 </div>
             </section>
         </div>
+        <Footer />
         </>
     );
 };
